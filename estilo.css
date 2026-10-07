@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serift;
+}
+harder {
+ background-color: #ffffff;
+ border-bottom: 2px solid #000000;
+ position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 1000;
+}
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000000;
+}
+.menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+}
+.brand {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+}
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: serif; /* estilo manuscrito/serifa como el boceto*/
+}
+.logo-circle {
+border: 1px solid #000;
+border-radius: 50%;
+padding: 5px 10px;
+font-size: 12px;
+}
+/*barra de navegacxion (pestañas) */
+.navbar {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+}
+.navbar a{
+    flex: 1;
+    text-align: center;
+    padding: 20px 5px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-right: 1px solid #000000;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+.navbar a:last-child{
+    border-right: none;
+}
+.navbar a:hover {
+    color: #4CAF50;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+.content{
+    padding-top: 120px;
+}
