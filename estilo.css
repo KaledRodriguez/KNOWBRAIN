@@ -9,7 +9,6 @@ body {
 header {
  background-color: #ffffff;
  border-bottom: 2px solid #000000;
- position: fixed;
  top: 0;
  width: 100%;
  z-index: 1000;
@@ -69,5 +68,15 @@ font-size: 12px;
     border-radius: 5px;
 }
 .content{
-    padding-top: 120px;
+    padding-top: 180px;
+}
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.imagenes img {
+    width: 400px;
+    height: auto;
 }
