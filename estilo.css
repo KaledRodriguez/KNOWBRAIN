@@ -14,53 +14,67 @@ header {
  z-index: 1000;
 }
 .top-row {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    min-height: 85px;
     padding: 10px 20px;
     border-bottom: 1px solid #000000;
 }
 .menu-icon{
-    font-size: 24px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
     cursor: pointer;
 }
 .brand {
      display: flex;
      align-items: center;
-     gap: 10px;
+     justify-content: center;
+     gap: 15px;
 }
 .title {
     font-size: 32px;
     font-weight: bold;
-    font-family: serif; /* estilo manuscrito/serifa como el boceto*/
+    font-family: serif;
 }
-.logo-circle {
-border: 1px solid #000;
-border-radius: 50%;
-padding: 5px 10px;
-font-size: 12px;
+.Logo-img{
+    height: 70px;
+    width: auto;
 }
-/*barra de navegacxion (pestañas) */
 .navbar {
-   display: flex;
-   width: 100%;
-   justify-content: center;
-   align-items: center;
+    width: 100%;
 }
-.navbar a{
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar li {
     flex: 1;
+    min-width: 0;
     text-align: center;
-    padding: 20px 5px;
-    color: #000000;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    border-right: 1px solid #000000;
-    margin: 0 15px;
-    transition: 0.3s;
+    border-right: 1px solid #000;
 }
-.navbar a:last-child{
+.navbar li:last-child {
     border-right: none;
+}
+.navbar a {
+    display: block;
+    padding: 20px 5px;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 .navbar a:hover {
     color: #4CAF50;
@@ -68,7 +82,7 @@ font-size: 12px;
     border-radius: 5px;
 }
 .content{
-    padding-top: 180px;
+    padding-top: 30px 20px;
 }
 .imagenes {
     display: flex;
