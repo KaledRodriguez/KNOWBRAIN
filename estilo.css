@@ -90,8 +90,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 15px;
-    padding-top: 30px 20px;
+    gap: 35px;
+    max-width: 1100px; 
+    margin: 40px auto;
+    padding: 20px;
 }
 .imagenes {
     display: flex;
@@ -320,4 +322,13 @@ header {
 .Pagina-tra .recuadro-tra p {
     font-size: 15px;
     line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none; /* Oculta el menú por defecto en celulares */
+    }
+    
+    .navbar.activo {
+        display: block; /* Muestra el menú cuando tenga la clase 'activo' */
+    }
 }
